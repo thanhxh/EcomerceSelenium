@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All Test Suite" verbose="1">
+    <test name="Test Product">
+        <parameter name="BrowserName" value="chrome"></parameter>
+        <classes>
+            <class name="com.thanh.testcases.ProductTest">
+                <methods>
+                    <include name="testProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test Categories">
+        <parameter name="BrowserName" value="chrome"></parameter>
+        <classes>
+            <class name="com.thanh.testcases.CategoriesTest">
+                <methods>
+                    <include name="testCategory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
